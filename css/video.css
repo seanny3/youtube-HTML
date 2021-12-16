@@ -1,0 +1,9 @@
+.video__container {
+  position: sticky;
+  top: 0;
+  width: 100vw;
+}
+.video__container iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
