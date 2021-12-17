@@ -1,0 +1,58 @@
+.comments__container {
+  padding: 0 15px;
+  padding-top: 7px;
+  height: 75px;
+}
+.comments__metadata {
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
+  grid-template-rows: 30px;
+  grid-template-areas: "title number more";
+  text-align: center;
+}
+.comments__metadata div {
+  grid-area: title;
+  font-size: 15px;
+  margin: auto 0;
+}
+.comments__metadata span {
+  grid-area: span;
+  font-size: 15px;
+  color: white;
+  opacity: 0.6;
+  margin: auto 0;
+  text-align: start;
+  margin-left: 6px;
+}
+.comments__metadata i {
+  grid-area: more;
+  font-size: 18px;
+  color: white;
+  opacity: 0.6;
+  margin: auto 0;
+}
+.comment__metadata {
+  display: flex;
+}
+
+.comments {
+  margin-top: 7px;
+}
+.comment__writer {
+  border-radius: 50px;
+  font-size: 16px;
+  width: 26px;
+  height: 26px;
+  background-color: skyblue;
+  color: white;
+  text-align: center;
+  line-height: 24px;
+  margin-left: 3px;
+}
+.comment__metadata p {
+  margin-left: 8px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

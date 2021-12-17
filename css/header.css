@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 0 15px;
+  padding: 0 20px;
   font-size: 17px;
   height: 60px;
   width: 100vw;
@@ -24,6 +24,9 @@
 }
 .header__right i {
   margin-left: 15px;
+}
+.header__right i:last-child {
+  color: skyblue;
 }
 
 .header.downScroll {

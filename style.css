@@ -4,6 +4,8 @@
 @import "./css/video_metadata.css";
 @import "./css/owner_metadata.css";
 @import "./css/comments.css";
+@import "./css/more_video.css";
+@import "./css/popup.css";
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -11,4 +13,24 @@ body {
 
   background-color: #212121;
   color: #ffff;
+}
+
+.invisible__inDesktop {
+  width: 100vw;
+  height: 100vh;
+  background-color: #212121;
+  display: block;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 60px;
+  text-align: center;
+  line-height: 100vh;
+}
+
+@media screen and (max-width: 500px) {
+  .invisible__inDesktop {
+    display: none;
+  }
 }

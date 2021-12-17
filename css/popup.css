@@ -1,0 +1,118 @@
+.video__bottom {
+  height: 100vh;
+}
+.comments__popup {
+  display: none;
+  background-color: #212121;
+  z-index: 2;
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  top: calc(100vw * (9 / 16));
+  overflow: scroll;
+}
+
+.popup__top {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 3;
+  background-color: #212121;
+}
+.popup__metadata__left {
+  display: flex;
+}
+.popup__metadata__left span {
+  margin-left: 10px;
+  color: white;
+  opacity: 0.6;
+}
+.popup__metadata__right {
+  display: flex;
+  color: white;
+}
+.popup__metadata__right i:last-child {
+  margin-left: 20px;
+}
+
+.writing__notice {
+  background-color: #141414;
+  padding: 10px 20px;
+  font-size: 12px;
+}
+.writing__notice a {
+  color: rgb(104, 101, 248);
+}
+
+.writing__form {
+  padding: 10px 20px;
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.writing__form i {
+  font-size: 25px;
+  color: skyblue;
+}
+.writing__form p {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  opacity: 0.6;
+}
+
+.comment__grid {
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  grid-template-areas:
+    "img	data"
+    "img	text"
+    "img	btn"
+    "img 	reply";
+}
+.writer__profile {
+  grid-area: img;
+}
+.writer__profile div {
+  border-radius: 50px;
+  font-size: 16px;
+  width: 26px;
+  height: 26px;
+  background-color: skyblue;
+  color: white;
+  text-align: center;
+  line-height: 24px;
+}
+.write__metadata {
+  grid-area: data;
+  opacity: 0.6;
+}
+.comment__text {
+  grid-area: text;
+  padding: 3px 0;
+}
+.comment__func {
+  grid-area: btn;
+  display: flex;
+  margin: 10px 0;
+}
+.reply {
+  grid-area: reply;
+  margin: 10px 0;
+  color: rgb(104, 101, 248);
+}
+.comment__func i {
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.comments__popup.slideUp {
+  display: block;
+}

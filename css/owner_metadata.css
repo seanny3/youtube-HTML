@@ -1,0 +1,51 @@
+.owner__metadata__container {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0 15px;
+  text-align: center;
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: 50px 1fr 60px 45px;
+  grid-template-rows: 22px 22px;
+  grid-template-areas:
+    "img	name	subBtn	bell"
+    "img	sub		subBtn	bell";
+}
+
+.owner__img img {
+  width: 37px;
+  border-radius: 50%;
+}
+
+.owner__img {
+  grid-area: img;
+  margin: auto 0;
+  margin-right: 10px;
+}
+.owner__name {
+  text-align: start;
+  grid-area: name;
+  font-size: 20px;
+  line-height: 20px;
+}
+.owner__subscribers {
+  text-align: start;
+  grid-area: sub;
+  font-size: 13px;
+  color: white;
+  opacity: 0.6;
+  margin: auto 0;
+}
+.subscribe__btn {
+  grid-area: subBtn;
+  font-size: 16px;
+}
+.notification__btn {
+  grid-area: bell;
+  font-size: 22px;
+}
+.subscribe__btn,
+.notification__btn {
+  margin: auto 0;
+  opacity: 0.6;
+}

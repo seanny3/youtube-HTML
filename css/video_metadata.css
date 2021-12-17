@@ -2,7 +2,7 @@
   padding: 15px 0;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 1fr 50px;
+  grid-template-columns: 1fr 45px;
   grid-template-rows: 26px 26px 50px;
   grid-template-areas:
     "title info"
@@ -18,26 +18,34 @@
   grid-area: title;
   white-space: normal;
   word-break: break-all;
+  font-weight: bold;
 }
 .video__views {
   grid-area: view;
-  font-size: 15px;
+  font-size: 13px;
   color: white;
   opacity: 0.6;
-  margin-top: 3px;
+  margin-top: 5px;
 }
 .more__info__btn {
   grid-area: info;
-  margin: 0 auto;
-}
-.more__info__btn i {
+  text-align: start;
+  color: white;
+  opacity: 0.6;
 }
 .slider__func__btn {
   grid-area: slider;
   margin: auto 0;
   overflow: scroll;
   white-space: nowrap;
+  scrollbar-width: none; /* Firefox */
+}
+/* Chrome,safari,opera */
+.slider__func__btn::-webkit-scrollbar {
+  display: none;
 }
 .slider__func__btn i {
   margin-left: 50px;
+  color: white;
+  opacity: 0.6;
 }
