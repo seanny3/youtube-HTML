@@ -30,6 +30,7 @@
   color: white;
   opacity: 0.6;
   margin: auto 0;
+  cursor: pointer;
 }
 .comment__metadata {
   display: flex;
