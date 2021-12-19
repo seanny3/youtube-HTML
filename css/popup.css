@@ -34,13 +34,15 @@
   display: flex;
 }
 .popup__metadata__left span {
-  margin-left: 10px;
+  margin-left: 15px;
   color: white;
   opacity: 0.6;
 }
 .popup__metadata__right {
   display: flex;
   color: white;
+  margin: auto 0;
+  font-size: 22px;
 }
 .popup__metadata__right i:last-child {
   cursor: pointer;
@@ -52,7 +54,7 @@
 .writing__notice {
   background-color: #141414;
   padding: 10px 20px;
-  font-size: 12px;
+  font-size: 15px;
 }
 .writing__notice a {
   color: rgb(104, 101, 248);
@@ -64,11 +66,11 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .writing__form i {
-  font-size: 25px;
+  font-size: 38px;
   color: skyblue;
 }
 .writing__form p {
-  font-size: 12px;
+  font-size: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,45 +82,69 @@
   padding: 10px 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   display: grid;
-  grid-template-columns: 40px 1fr;
+  grid-template-columns: 50px 1fr 20px;
   grid-template-areas:
-    "img	data"
-    "img	text"
-    "img	btn"
-    "img 	reply";
+    "img	data etc"
+    "img	text etc"
+    "img	btn etc"
+    "img 	reply reply";
+}
+.comment__grid i {
+  grid-area: etc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 .writer__profile {
   grid-area: img;
 }
 .writer__profile div {
   border-radius: 50px;
-  font-size: 16px;
-  width: 26px;
-  height: 26px;
+  font-size: 18px;
+  width: 38px;
+  height: 38px;
   background-color: skyblue;
   color: white;
   text-align: center;
-  line-height: 24px;
+  line-height: 38px;
 }
 .write__metadata {
   grid-area: data;
   opacity: 0.6;
 }
+.write__metadata p {
+  font-size: 12px;
+}
 .comment__text {
+  font-size: 15px;
   grid-area: text;
   padding: 3px 0;
-}
-.comment__func {
-  grid-area: btn;
-  display: flex;
-  margin: 10px 0;
 }
 .reply {
   grid-area: reply;
   margin: 10px 0;
   color: rgb(104, 101, 248);
+  font-size: 15px;
+}
+.comment__func {
+  grid-area: btn;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-areas: "up down reply";
+  grid-template-columns: 60px 60px 50px;
 }
 .comment__func i {
-  margin-right: 10px;
   font-size: 12px;
+  margin-right: 40px;
+}
+.comment__func i:nth-child(1) {
+  grid-area: up;
+}
+.comment__func i:nth-child(2) {
+  grid-area: down;
+}
+.comment__func i:nth-child(3) {
+  grid-area: reply;
 }
