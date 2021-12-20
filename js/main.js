@@ -18,3 +18,11 @@ quit_popup.addEventListener('click', () => {
     popup.classList.remove('slideUp');
 })
 
+// video link
+const video_links = document.querySelectorAll('.link');
+const video_container = document.querySelector('.video__container iframe');
+video_links.forEach((video_link) => {
+    video_link.addEventListener('mousedown', (e) => {
+        video_container.src = e.target.parentNode.dataset.link;
+    })
+})

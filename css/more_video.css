@@ -1,6 +1,44 @@
 .more__video__container {
-  background-color: white;
-  opacity: 0.1;
+  background-color: rgb(66, 66, 66);
   width: 100vw;
-  height: 500px;
+}
+.more__video {
+  background-color: #212121;
+}
+.more__video__img img {
+  width: 100vw;
+  cursor: pointer;
+}
+.more__video__container {
+  padding: 6px 0;
+}
+.more__video__metadata {
+  padding: 0 15px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  display: grid;
+  grid-template-columns: 55px 1fr 30px;
+  grid-template-areas:
+    "profile  title etc"
+    "profile  name  etc";
+}
+.more__video__profile {
+  grid-area: profile;
+}
+.more__video__profile img {
+  border-radius: 50%;
+  width: 40px;
+}
+.more__video__title {
+  grid-area: title;
+  font-size: 15px;
+}
+.more__video__name {
+  grid-area: name;
+  font-size: 14px;
+  opacity: 0.6;
+}
+.more__video__etc {
+  grid-area: etc;
+  font-size: 14px;
 }

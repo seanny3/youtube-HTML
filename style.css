@@ -15,10 +15,6 @@ body {
   color: #ffff;
 }
 
-.video__bottom {
-  overflow: unset;
-}
-
 .invisible__inDesktop {
   width: 100vw;
   height: 100vh;
