@@ -45,7 +45,7 @@
   display: none;
 }
 .slider__func__btn i {
-  margin-left: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
   color: white;
-  opacity: 0.6;
 }
