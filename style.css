@@ -29,12 +29,18 @@ body {
   line-height: 100vh;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .invisible__inDesktop {
     display: none;
   }
 }
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 600px) {
+  .slider__func__btn {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 801px) {
   .header,
   .video__container,
   .video__bottom {

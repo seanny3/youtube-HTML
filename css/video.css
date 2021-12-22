@@ -2,7 +2,7 @@
   z-index: 2;
   position: sticky;
   top: 0;
-  width: 100vw;
+  width: 100%;
 }
 .video__container iframe {
   width: 100%;

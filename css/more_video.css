@@ -6,7 +6,7 @@
   background-color: #212121;
 }
 .more__video__img img {
-  width: 100vw;
+  width: 100%;
   cursor: pointer;
 }
 .more__video__container {
